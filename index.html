@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<h3>Usage:</h3>
+			<ul>
+				<li>Use the 'n' key to move next, 'p' key for previous, and 'enter' to select</li>
+			</ul>
+			<h3>Methodology:</h3>
+			<p>Five equations were entered on the calculator with either a three key or five key switch interface. The three key interface used 'n', 'p', and 'enter', for next, previous, and select respectively. The five key interface added 'u' and 'd' for up and down, respectively.</p>
+			<p>The five equations were:</p>
+			<ol>
+				<li>5+10*3</li>
+				<li>18/3-10</li>
+				<li>4/3/2*3</li>
+				<li>71+549/17</li>
+				<li>852*7+96-74</li>
+			</ol>
+
+			<p>The test included four trials for each interface. Completion times were averaged and are listed in the table below.</p>
+			<h3>Test results:</h3>
+			<h4>Average Time for Task Completion </h4>
+			<table class="table">
+				<tr>
+				<th>Switch Interface</th>
+				<th>Average Time to Completion</th>
+				<th>Number of Errors</th>
+			</tr>
+			<tr>
+				<td>Three Key</td>
+				<td>98.43 seconds</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Five Key</td>
+				<td>110.44 seconds</td>
+				<td>0</td>
+			</tr>
+		</table>
+
+			<p> These results indicate that the simpler three-key interface is slightly faster, but did produce more errors. This increase in speed could be explained by the mapping of the keys to switches, with the 'u' and 'd' keys in the five key interface being quite distant from eachother. </p>
+			<p> A different key mapping would likely yield different results than were collected here. </p>
+
+
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
